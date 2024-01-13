@@ -1,40 +1,28 @@
 import { useState } from 'react'
-import React from 'react'
 
 function App() {
-   const [Todos,setTodos]=useState([{
-    title:"gym",
-    description:"go to gym",
-    completed:"false"
-   },{
-    title:"dsa",
-    description:"practise dsa",
-    completed:"false"
-   }]);
-    
-  function Addtodo(){
-    setTodos([...Todos,{
-  // { if Todos={1,2} then [...Todos()]==>{1,2,3}
-    title:"new todo",
-    description:"desc of new todo"
-   }])
-  }
+  const [exchangeData, setExchangeData] = useState({});
+  const [bankData, setBankData] = useState({});
+
+  fetch("https://google.com", async (res) => {
+    const json = await res.json();
+    setBankData(json);
+    // Assume it is { income: 100 }
+  });
+
+  setTimeout(() => {
+    setExchangeData({
+      returns: 100
+    });
+  }, 1000);
+
+  const incomeTax = (bankData.income + exchangeData) * 0.3;
 
   return (
-   <div>
-     <button onClick={Addtodo}>Add a Todo</button>
-     {Todos.map(function(todo){
-      return <Todo title={todo.title} description={todo.description}/>
-     })}
-   </div>
+    <div>
+        hi there, your income tax returns are {incomeTax}
+    </div>
   )
-};
-
-function Todo(props){
-  return <div>
-    <h1>{props.title}</h1>
-    <h3>{props.description}</h3>
-  </div>
 }
-export default App;
- 
+
+export default App

@@ -1,16 +1,18 @@
-import { useState } from 'react'
-import './App.css'
+import React from 'react';
+import './App.css';
+import Menu  from "./components/Menu"; // Assuming Menu is a default export in Menu.js
+import Part  from "./components/Part";
+import Part2 from './components/Part2';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        
-      </div>
-    </>
-  )
+    <div>
+      <Menu />
+      <Part />
+      <Part2/>
+    </div>
+  );
 }
 
-export default App
+export default App;
+

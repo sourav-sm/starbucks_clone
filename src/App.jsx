@@ -12,14 +12,14 @@ import Part7 from './components/Part7';
 function App() {
   return (
     <div>
-      <Menu />
+      {/* <Menu /> */}
       <Part />
-      <Part2/>
-      <Part3/>
+       <Part2/>
+      {/* <Part3/>
       <Part4/>
       <Part5/>
       <Part6/>
-      <Part7/>     
+      <Part7/>      */} 
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import Part_1 from "../assets/1part.png";
 
-function Part2() {
+function Part() {
   return (
     <div style={{
       display: "flex",
@@ -13,7 +13,7 @@ function Part2() {
       
       <img
         src={Part_1}
-        alt="part2"
+        alt="part1"
         style={{
           width: "100%",
           maxWidth: "700px",
@@ -54,4 +54,4 @@ function Part2() {
   );
 }
 
-export default Part2;
+export default Part;

@@ -12,7 +12,7 @@ import Part7 from './components/Part7';
 function App() {
   return (
     <div>
-      {/* <Menu /> */}
+      <Menu />
       <Part />
        <Part2/>
        <Part3/>

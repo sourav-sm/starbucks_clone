@@ -19,7 +19,7 @@ function App() {
       <Part4/>
       <Part5/>
       <Part6/>
-      {/* <Part7/>       */}
+      <Part7/>      
     </div>
   );
 }

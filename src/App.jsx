@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Menu  from "./components/Menu"; // Assuming Menu is a default export in Menu.js
+import Navbar  from "./components/Navbar"; // Assuming Menu is a default export in Menu.js
 import Part  from "./components/Part";
 import Part2 from './components/Part2';
 import Part3 from './components/Part3';
@@ -12,7 +12,7 @@ import Part7 from './components/Part7';
 function App() {
   return (
     <div>
-      <Menu />
+      <Navbar />
       <Part />
        <Part2/>
        <Part3/>
